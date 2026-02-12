@@ -188,23 +188,25 @@
         </div>
 
         <!-- タブナビゲーション -->
-        <ul class="nav nav-pills mb-4" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn active" id="upcoming-tab" data-bs-toggle="pill" data-bs-target="#upcoming" type="button" role="tab">
-                    <i class="bi bi-calendar-event"></i> 参加予定 (3)
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn" id="history-tab" data-bs-toggle="pill" data-bs-target="#history" type="button" role="tab">
-                    <i class="bi bi-clock-history"></i> 参加履歴 (12)
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn" id="cancelled-tab" data-bs-toggle="pill" data-bs-target="#cancelled" type="button" role="tab">
-                    <i class="bi bi-x-circle"></i> キャンセル済み (2)
-                </button>
-            </li>
-        </ul>
+        <div class="d-flex justify-content-center mb-4">
+            <ul class="nav nav-pills" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="upcoming-tab" data-bs-toggle="pill" data-bs-target="#upcoming" type="button" role="tab">
+                        参加予定 (3)
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="history-tab" data-bs-toggle="pill" data-bs-target="#history" type="button" role="tab">
+                        参加履歴 (12)
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cancelled-tab" data-bs-toggle="pill" data-bs-target="#cancelled" type="button" role="tab">
+                        キャンセル済み
+                    </button>
+                </li>
+            </ul>
+        </div>
 
         <!-- タブコンテンツ -->
         <div class="tab-content" id="myTabContent">
